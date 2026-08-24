@@ -329,6 +329,48 @@
   }
 
   /* ---------------------------------- */
+  /* PROJECT THUMBNAILS — REAL IMAGES    */
+  /* ---------------------------------- */
+  .thumb[data-project="allstar"],
+  .thumb[data-project="itb"],
+  .thumb[data-project="hideaway"],
+  .thumb[data-project="kidssoho"],
+  .thumb[data-project="kmf"],
+  .thumb[data-project="mantra"],
+  .thumb[data-project="royalaventus"],
+  .thumb[data-project="tijilibenoa"],
+  .thumb[data-project="tijiliseminyak"],
+  .thumb[data-project="malupilates"] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .thumb[data-project="allstar"] { background-image: url('images/allstar.webp'); }
+  .thumb[data-project="itb"] { background-image: url('images/itb.webp'); }
+  .thumb[data-project="hideaway"] { background-image: url('images/hideaway.webp'); }
+  .thumb[data-project="kidssoho"] { background-image: url('images/kidssoho.webp'); }
+  .thumb[data-project="kmf"] { background-image: url('images/kmf.webp'); }
+  .thumb[data-project="mantra"] { background-image: url('images/mantra.webp'); }
+  .thumb[data-project="royalaventus"] { background-image: url('images/royalaventus.webp'); }
+  .thumb[data-project="tijilibenoa"] { background-image: url('images/tijilibenoa.webp'); }
+  .thumb[data-project="tijiliseminyak"] { background-image: url('images/tijiliseminyak.webp'); }
+  .thumb[data-project="malupilates"] { background-image: url('images/malupilates.webp'); }
+
+  /* projects with a real image no longer need the initials label */
+  .thumb[data-project="allstar"] span,
+  .thumb[data-project="itb"] span,
+  .thumb[data-project="hideaway"] span,
+  .thumb[data-project="kidssoho"] span,
+  .thumb[data-project="kmf"] span,
+  .thumb[data-project="mantra"] span,
+  .thumb[data-project="royalaventus"] span,
+  .thumb[data-project="tijilibenoa"] span,
+  .thumb[data-project="tijiliseminyak"] span,
+  .thumb[data-project="malupilates"] span {
+    display: none;
+  }
+
+  /* ---------------------------------- */
   /* MODAL                               */
   /* ---------------------------------- */
   .modal-overlay {
@@ -497,7 +539,7 @@
 
   <div class="hero-meta">
     <div class="col">
-      <b>11 Projects</b>
+      <b>Selected Work</b>
       Restaurants · Hotels · Wellness · Travel · Manufacturing
     </div>
     <div class="scroll-cue">
@@ -512,8 +554,8 @@
     <p>I build WordPress sites for businesses that live and die by bookings — hotels, restaurants, tour operators, wellness studios. My job is to make the backend so simple a non-technical team can run it, and the frontend fast enough to convert a browser into a guest.</p>
     <div class="about-stats">
       <div class="stat">
-        <div class="num">11</div>
-        <div class="label">Websites shipped across hospitality, travel, wellness &amp; industry</div>
+        <div class="num">Custom-Built</div>
+        <div class="label">Every site built on custom post types &amp; fields, not rigid templates</div>
       </div>
       <div class="stat">
         <div class="num">PMS / API</div>
@@ -531,7 +573,7 @@
 <section id="work" class="work">
   <div class="section-head reveal">
     <h2>Selected Work</h2>
-    <div class="count">01 — 11</div>
+    <div class="count">Hospitality &amp; Lifestyle Brands</div>
   </div>
 
   <div id="project-list"></div>
@@ -638,16 +680,6 @@ const projects = [
     challenge: "Each hotel needed its own identity and content, but the group needed one consistent booking experience across all three.",
     solution: "I used a custom post type architecture so each hotel is managed independently, while the booking system stays unified across the group.",
     highlight: "I integrated a Property Management System (PMS) so room availability and pricing stay live across every property, in real time."
-  },
-  {
-    slug: "taksvara",
-    name: "Taksvara",
-    category: "Property Management",
-    url: "https://taksvara.id/",
-    brief: "A corporate profile and property portfolio built to win trust from owners and tenants alike.",
-    challenge: "The company needed a digital presence professional enough to attract property owners while still being approachable for prospective tenants.",
-    solution: "I designed a clean, modern layout that leads with credibility, with clear calls-to-action guiding every visitor toward an inquiry.",
-    highlight: "I built the site around lead generation — contact forms placed with intent, and on-page SEO tuned to bring in relevant traffic."
   },
   {
     slug: "tijilibenoa",
